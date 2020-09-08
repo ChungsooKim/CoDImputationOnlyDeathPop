@@ -1,4 +1,4 @@
-CauseOfDeathImputation package
+CODImputationOnlyDeathPop package
 ========================================================
 
 
@@ -30,7 +30,7 @@ Instructions To Run Package
 
 
 ```r
-library(CauseOfDeathImputation)
+library(CODImputationOnlyDeathPop)
 
 # USER INPUTS
 #=======================
