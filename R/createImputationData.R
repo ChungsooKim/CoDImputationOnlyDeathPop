@@ -109,7 +109,7 @@ createImputationData <- function(outputFolder, TAR) {
   blank <- rep(0, nrow(df3))
   
   outDFdemographics <- merge(df3, df4, by = "rowId", all.x = T) %>% select (-rowId)
-  for (i in 1:length(diff)){
+  if(length(diff) > 0) for (i in 1:length(diff)){
     outDFdemographics <- cbind(outDFdemographics, blank)
     names(outDFdemographics)[length(outDFdemographics)] <- paste(diff[i])
     if(i == length(diff)) break
